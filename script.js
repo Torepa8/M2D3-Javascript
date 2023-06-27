@@ -5,14 +5,17 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let int1=1
-let int2=2
+let int1=9
+let int2=10
 
 if(int1>int2){
-  console.log(int1)
+  console.log(`${int1} è piu grande di ${int2}`)
 }
+  else if (int2>int1){
+    console.log(`${int1} è piu piccolo di ${int2}`)
+  }
   else{
-    console.log(int2)
+    console.log(`${int1} è uguale a ${int2}`)
   }
 
 /*
@@ -70,9 +73,9 @@ for(let x=0; x<=10; x++){
 /* SCRIVI QUI LA TUA RISPOSTA */
 for(let dp=0;dp<=15;dp++){
   if(dp%2===0){
-    console.log("Pari")
+    console.log(`${dp} Pari`)
   }else{
-    console.log("Dispari")
+    console.log(`${dp} Dispari`)
   }
 }
 
