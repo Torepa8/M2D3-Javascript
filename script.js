@@ -18,6 +18,7 @@ if(int1>int2){
     console.log(`${int1} è uguale a ${int2}`)
   }
 
+console.log("")
 /*
 ESERCIZIO 2
   Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione.
@@ -49,6 +50,7 @@ if(num<5){
   }
 
 }
+console.log("")
 
 //ESERCIZI SUI CICLI: 
 
@@ -64,6 +66,7 @@ for(let x=0; x<=10; x++){
   console.log(x);
 }
 
+console.log("")
 
 
 /* ESERCIZIO 11
@@ -78,6 +81,7 @@ for(let dp=0;dp<=15;dp++){
     console.log(`${dp} Dispari`)
   }
 }
+console.log("")
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
@@ -94,7 +98,7 @@ if((i1===8)||(i2===8)||(i1-i2===8)||(i2-i1===8)){
   console.log(val=true)
 }else{console.log(val=false)}
 
-
+console.log("")
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -122,19 +126,22 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let totalShoppingCart=70
+let totalShoppingCart=30
 let spedizione=10
 let checkout=null
 let sconto=20
 
-totalShoppingCart-=20/100*totalShoppingCart
-console.log(totalShoppingCart)
+totalShoppingCart-=sconto/100*totalShoppingCart
+console.log(`Carrello cliente ${totalShoppingCart}€`)
 if(totalShoppingCart>50){
   spedizione=null
+  console.log("Spedizione Gratis")
+}else{
+  console.log(`Costo spedizione ${spedizione}€`)
 }
-console.log(checkout=totalShoppingCart+spedizione)
+console.log(`Il cliente pagherà ${checkout=totalShoppingCart+spedizione}€`)
 
-
+console.log("")
 
 
 
@@ -149,7 +156,7 @@ let isMale=false
 let gender=(isMale===true)?"male":"female"
 console.log(gender)
 
-
+console.log("")
 
 
 
